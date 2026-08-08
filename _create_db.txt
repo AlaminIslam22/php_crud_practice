@@ -1,0 +1,21 @@
+create database Spring_26;
+use Spring_26;
+
+create table Student ( 
+	student_id INT(10) AUTO_INCREMENT, 
+	name char(30), 
+	department_id INT(10),
+	PRIMARY KEY(student_id) 
+);
+
+create table Department ( 
+	department_id INT(10) AUTO_INCREMENT, 
+	department_name char(30), 
+	PRIMARY KEY(department_id) 
+);
+
+insert into Student values ( '', 'alamin', '011' );
+insert into Student values ( '', 'shawon', '012' );
+
+insert into Department values ( '', 'Economics' );
+insert into Department values ( '', 'English' );
